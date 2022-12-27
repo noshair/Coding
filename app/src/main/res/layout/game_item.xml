@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+    <variable
+        name="facotry"
+        type="com.winter.check24codingchalleng.service.model.game_model.QuizResponseItem" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:weightSum="2">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:gravity="center"
+                android:background="@color/blue"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/score"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center"
+                    android:text="@string/justCheck"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/open_sans_light"
+                    android:background="@drawable/rounded_corner"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/images"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/ic_baseline_home_24"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:layout_weight="0.5"
+                    android:text="@{facotry.question}"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:background="@drawable/rounded_corner"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/l2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="7"
+                android:gravity="top"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:padding="10dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/a"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@{facotry.component1().component1()}"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/open_sans_light"
+                    android:background="@drawable/rounded_corner"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/b"
+                    android:text="@{facotry.component1().component2()}"
+                    android:fontFamily="@font/open_sans_light"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/rounded_corner"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/c"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/open_sans_light"
+                    android:background="@drawable/rounded_corner"
+                    android:text="@{facotry.component1().component3()}"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/d"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@{facotry.component1().component4()}"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/open_sans_light"
+                    android:background="@drawable/rounded_corner"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+</layout>

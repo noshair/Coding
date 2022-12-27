@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Check24CodingChallenge</string>
+    <string name="hello_blank_fragment">hello</string>
+    <string name="bottom_bar_list">Home</string>
+    <string name="justCheck">justCheck</string>
+    <string name="currentScore">currentScore</string>
+</resources>
